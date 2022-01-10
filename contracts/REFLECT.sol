@@ -1,13 +1,15 @@
 
-
+// SPDX-License-Identifier: GNU GPLv3
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
-import "openzeppelin-solidity/contracts/GSN/Context.sol";
-import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
-import "openzeppelin-solidity/contracts/utils/Address.sol";
-import "openzeppelin-solidity/contracts/access/Ownable.sol";
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/utils/Context.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
+import "@openzeppelin/contracts//access/Ownable.sol";
 
 contract REFLECT is Context, IERC20, Ownable {
     using SafeMath for uint256;
